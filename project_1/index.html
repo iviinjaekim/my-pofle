@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laon museum</title>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.bxslider.css" rel="stylesheet">
+    <link rel="icon" href="img/favicon.png">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/jquery_main_bxslide.js"></script>
+
+
+</head>
+<body>
+    <div id="wrap">
+        <!-- 헤더 영역 -->
+        <header>
+            <div class="inner">
+                <div class="logo"><a href="#"><img src="img/t_logo.png" alt="로고이미지"></a></div>
+                <div class="logo_2"><a href="#"><img src="img/m_t_logo.png" alt="로고이미지2"></a></div>
+                <div class="nav_box">
+                    <div class="t_nav">
+                        <div><span>OPEN DAILY 10 AM - 6 PM. CLOSED ON TUESDAYS.</span></div>
+                        <ul>
+                            <li class="t_serch">
+                                <form>
+                                <label>
+                                    <input type="serch" placeholder="Serch" autofocus>
+                                    <img class="img_1" src="img/serch.png" alt="검색아이콘">
+                                    <img class="img_2" src="img/serch_x.png" alt="검색끄기아이콘">
+                                </label>
+                                </form>
+                            </li>
+                            <li class="t_language">
+                                <form>
+                                    <label for="user_language"></label>
+                                    <select name="language" id="user_language">
+                                        <option>Language</option>
+                                        <option>English</option>
+                                        <option>日本語</option>
+                                        <option>中國語</option>
+                                    </select>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                    <nav class="b_nav">
+                        <ul class="m_menu">
+                            <li class="list"><a class="m_list" href="index_sub.html">전시회</a>
+                                <ul class="s_menu">
+                                    <li><a class="s_list" href="index_sub.html">진행중인 전시회</a></li>
+                                    <li><a href="#">지난전시회</a></li>
+                                    <li><a href="#">전시계획</a></li>
+                                    <li><a href="#">온라인 미술관</a></li>
+                                </ul>
+                            </li>
+                            <li class="list"><a class="m_list" href="index_sub_3.html">이용안내</a>
+                                <ul class="s_menu">
+                                    <li><a class="s_list" href="index_sub_3.html">사전 예약안내</a></li>
+                                    <li><a href="#">관람안내</a></li>
+                                    <li><a href="#">층별안내</a></li>
+                                    <li><a href="#">별관</a></li>
+                                </ul>
+                            </li>
+                            <li class="list"><a class="m_list" href="index_sub_2.html">컬렉션</a>
+                                <ul class="s_menu">
+                                    <li><a class="s_list" href="index_sub_2.html">기획전</a></li>
+                                    <li><a href="#">작품검색</a></li>
+                                </ul>
+                            </li>
+                            <li class="list"><a href="#">학습프로그램</a>
+                                <ul class="s_menu">
+                                    <li><a href="#">가족프로그램</a></li>
+                                    <li><a href="#">시민강좌</a></li>
+                                    <li><a href="#">청소년강좌</a></li>
+                                </ul>
+                            </li>
+                            <li class="list"><a href="#">미술관소개</a>
+                                <ul class="s_menu lastbox">
+                                    <li><a href="#">연혁</a></li>
+                                    <li><a href="#">조직도</a></li>
+                                </ul>
+                            </li>
+                        </ul> 
+                    </nav>
+                    <div class="side_button">
+                        <div class="side_open">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="side_close">
+                            <img src="img/serch_x2.png" alt="검색끄기버튼2" width="40px" height="40px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--사이드 메뉴 영역-->
+        <section class="overlay_sub">
+            <div class="overlay_inner">
+                <form class="overlay_serch">
+                    <div class="serch_wrap">
+                        <input class="serch_input" type="serch" placeholder="Serch" autofocus>
+                        <input class="serch_icon" type="image" src="img/serch.png" alt="검색아이콘">
+                    </div>
+                </form>
+                <ul class="overlay_menu">
+                    <li class="list"><a class="m_list" href="#">전시회</a>
+                        <ul class="ols_menu">
+                            <li><a class="s_list" href="index_sub.html">진행중인 전시회</a></li>
+                            <li><a href="#">지난전시회</a></li>
+                            <li><a href="#">전시계획</a></li>
+                            <li><a href="#">온라인 미술관</a></li>
+                        </ul>
+                    </li>
+                    <li class="list"><a class="m_list" href="#">이용안내</a>
+                        <ul class="ols_menu">
+                            <li><a class="s_list" href="index_sub_3.html">사전 예약안내</a></li>
+                            <li><a href="#">관람안내</a></li>
+                            <li><a href="#">층별안내</a></li>
+                            <li><a href="#">별관</a></li>
+                        </ul>
+                    </li>
+                    <li class="list"><a class="m_list" href="#">컬렉션</a>
+                        <ul class="ols_menu">
+                            <li><a class="s_list" href="index_sub_2.html">기획전</a></li>
+                            <li><a href="#">작품검색</a></li>
+                        </ul>
+                    </li>
+                    <li class="list"><a href="#">학습프로그램</a>
+                        <ul class="ols_menu">
+                            <li><a href="#">가족프로그램</a></li>
+                            <li><a href="#">시민강좌</a></li>
+                            <li><a href="#">청소년강좌</a></li>
+                        </ul>
+                    </li>
+                    <li class="list"><a href="#">미술관소개</a>
+                        <ul class="ols_menu">
+                            <li><a href="#">연혁</a></li>
+                            <li><a href="#">조직도</a></li>
+                        </ul>
+                    </li>
+                    <li class="list"><a href="#">Language</a>
+                        <ul class="ols_menu">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">日本語</a></li>
+                            <li><a href="#">中國語</a></li>
+                        </ul>
+                    </li>
+                </ul> 
+            </div>
+        </section>
+        <!-- 메인 영역 -->
+        <section class="main_img">
+            <div class="imgs_area bxslider">
+                        <a href="#">
+                            <img class="m_img" src="img/main_img.jpg" alt="메인이미지">
+                            <img class="s_img" src="img_mobile/m_main_img.jpg" alt="모바일이미지">
+                        </a>
+                        <a href="#">
+                            <img class="m_img2" src="img/main_img_2.jpg" alt="메인이미지2">
+                            <img class="s_img2" src="img_mobile/m_main_img2.jpg" alt="모바일이미지2">
+                        </a>
+            </div>
+        </section>
+        <!-- 컨텐츠1 영역 -->
+        <section class="contents_1">
+            <div class="con_box_up">
+                <div class="box_up inner">
+                    <div><img src="img/ico_resever.png" alt="사전예약아이콘"><h4>관람은 사전예약제 입니다</h4></div>
+                    <div><p>신종코로나 바이러스의 감염확대
+                        <br>방지의 노력과 관심을 부탁드립니다.</p>
+                    </div>
+                    <div><a href="index_sub_3.html">자세한 것은 이쪽 →
+                        <div class="boxup_slide"></div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="con_box_down">
+                <div class="box_down inner">
+                    <div><img src="img/ico_audio.png" alt="음성가이드아이콘"><h4>무료 음성 가이드</h4></div>
+                    <div><p>스마트폰과 이어폰을 지참해 주세요.
+                        <br>앱에서 무료로 음성안내를 즐길 수 있습니다.</p>
+                    </div>
+                    <div><a href="#">자세한 것은 이쪽 →
+                        <div class="boxdown_slide"></div></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 컨텐츠2 영역 -->
+        <section class="contents_2">
+            <div class="inner">
+                <div class="con2_box">
+                    <div class="box_left">
+                        <h2>Exhibition</h2>
+                        <div class="box_card">
+                            <a href="index_sub_2.html"><div class="con2_img"></div></a>
+                            <h3 class="text_line">
+                                <a href="index_sub_2.html">Harmony of boundaries: to minimalism</a>
+                            </h3>
+                        </div>
+                        <br><p>2021년 7월10일 - 11월12일</p>
+                    </div>
+                    <div class="box_right">
+                        <h2>Running program</h2>
+                        <div class="box_card">
+                            <a href="#"><div class="con2_img2"></div></a>
+                            <h3 class="text_line2">
+                                <a href="#">Class: Jackson Pollock’s Drip Technique</a>
+                            </h3>
+                        </div>
+                        <br><p>2021년 8월5일 - 10월5일</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 컨텐츠3 영역 -->
+        <section class="contents_3">
+            <div class="inner">
+                <h2>Pick up</h2>
+                <div class="box_group">
+                    <a href="#">
+                        <div class="gr_box1">
+                        <p>MUSEUM<br>SHOP</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="gr_box2">
+                        <p>MUSEUM<br>CAFE</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="gr_box3">
+                        <p>SPACE<br>LEEUFAN</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- 컨텐츠4 영역 -->
+        <section class="contents_4">
+            <div class="inner">
+                <div class="list_box">
+                    <h2>NEWS</h2>
+                    <a href="#">목록 ▶</a>
+                </div>
+                <ul class="news_box">
+                    <li>
+                        <p><span>2021.07.10</span><a href="#">PICASSO 140주년 특별전시 안내</a></p>
+                    </li>
+                    <li>
+                        <p><span>2021.08.10</span><a href="#">ATC 워크숍 “콜라주 연작 ” 참가자를 모집 (정원이 차면 신청 접수 종료)</a></p>
+                    </li>
+                    <li>
+                        <p><span>2021.07.23</span><a href="#">클로드모네 - 풍경에 대한 질문 오르세 미술관 온라인 특별기획</a></p>
+                    </li>
+                    <li>
+                        <p><span>2021.08.21</span><a href="#">2021 청소년 교육 프로그램 “impressionist” 참가자 모집 (정원이 차면 신청 접수 종료)</a></p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- 푸터 영역 -->
+        <footer>
+            <div class="inner">
+                <div class="f_logo"><a href="#"><img src="img/f_logo.png" alt="푸터로고이미지"></a></div>
+                <div class="f_logo2"><a href="#"><img src="img_mobile/m_f_logo.png" alt="푸터로고이미지2"></a></div>
+                <div class="f_box">
+                    <div class="text_box">
+                        <p>이용약관 | 개인정보처리방침 | 사이트맵
+                        <br>(우 425 123) 부산광역시 해운대구 APEC로 145 라온미술관 / 051-751-1234
+                        <br><span>© Laon Museum, Metropolitan City. All rights reserved.</span></p>
+                    </div>
+                    <ul class="sns_box">
+                        <li><a href="#"><img src="img/ico_instagram.png" alt="인스타아이콘"></a></li>
+                        <li><a href="#"><img src="img/ico_twitter.png" alt="트위터아이콘"></a></li>
+                        <li><a href="#"><img src="img/ico_facebook.png" alt="페이스북아이콘"></a></li>
+                        <li><a href="#"><img src="img/ico_youtube.png" alt="유튜브아이콘"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
