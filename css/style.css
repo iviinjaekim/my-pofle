@@ -309,8 +309,8 @@ body:after {
     font-size: 1.5rem; }
     .site-navbar .site-logo a {
       display: inline-block;
-      width: 100px;
-      height: 40px;
+      width: 156px;
+      height: 50px;
       padding: 5px 10px;
       background-image: url(../images/top_logo.png);
       background-repeat: no-repeat; }
@@ -843,7 +843,7 @@ body:after {
   text-align: center; }
   .slide-one-item .slide blockquote {
     position: relative;
-    max-width: 1000px;
+    max-width: 1110px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -888,33 +888,22 @@ body:after {
   .blog_entry h3 a {
     color: #000; }
 
-.blog_entry .web_color_1 {
-  color: #ffffff;
-  display: block;
-  font-size: .9rem;
-  margin-bottom: 15px; 
-  background-color: #81a9b3;
-  width: 100px; }
-
-.blog_entry .web_color_2 {
-  color: #ffffff;
-  display: block;
-  font-size: .9rem;
-  margin-bottom: 15px; 
-  background-color: #039940;
-  width: 100px; }
-
-.blog_entry .web_color_3 {
-  color: #000000;
-  display: block;
-  font-size: .9rem;
-  margin-bottom: 15px; 
-  background-color: #d2c1a7;
-  width: 100px; }
+  .blog_entry .line_color{
+    display: block;
+    background: #c2e54f;
+    height: 2px;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem; 
+  }
+  .blog_entry .line_color_2{
+    display: block;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem; 
+  }
 
 .blog_entry .more a {
   position: relative;
-  color: #000;
+  color: #71bc42;
   padding-bottom: 10px; }
   .blog_entry .more a:before {
     content: "";
@@ -1052,6 +1041,39 @@ body:after {
   width: 100%;
 }
 
+.footer {
+  font-size: .9rem; }
+  .footer .footer-title {
+    font-size: 1.1rem; }
+  .footer ul li {
+    margin-bottom: 10px; }
+  .footer a {
+    color: #888888; }
+    .footer a:hover {
+      color: #000; }
+
+
+/* 수정 내용 */
+
+.p-13{
+  padding: 3rem;
+}
+
+.text-top{
+  margin-top: 3rem;
+}
+
+.app-section{
+  margin-top: 60px;
+}
+.app-section h2{
+  font-size: 2.4rem;
+}
+.app-section p{
+  font-size: 1.2rem;
+  padding: 0 0 10px 0;
+}
+
 .card_box{
   width: 500px;
   margin: 0 auto;
@@ -1081,13 +1103,67 @@ body:after {
   }
 }
 
-.footer {
-  font-size: .9rem; }
-  .footer .footer-title {
-    font-size: 1.1rem; }
-  .footer ul li {
-    margin-bottom: 10px; }
-  .footer a {
-    color: #888888; }
-    .footer a:hover {
-      color: #000; }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+KR&family=Roboto:wght@300&display=swap');
+
+.text_pofle p:nth-child(1){
+  font-size: 6rem;
+  font-weight: 300;
+  letter-spacing: 2.5rem;
+  color: #5f5f5f;
+  font-family: 'Roboto', sans-serif;
+}
+.text_pofle p:nth-child(2){
+  font-size: 6rem;
+  letter-spacing: 2.5rem;
+  color: #5f5f5f;
+  font-family: 'Montserrat', sans-serif;
+}
+.text_pofle p:nth-child(3){
+  font-size: 3rem;
+  letter-spacing: 1.2rem;
+  color: #929292;
+  font-family: 'Montserrat', sans-serif;
+  margin: 140px 0 50px 0;
+}
+.text_pofle p:nth-child(4){
+  font-size: 1.2rem;
+  color: #929292;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.flex_box{
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.item_box{
+  flex: 0 2 60%;
+}
+@media (max-width: 991px) {
+  .flex_box .text_pofle p:nth-child(1), .text_pofle p:nth-child(2){
+    font-size: 5rem;
+  }
+  .flex_box .text_pofle p:nth-child(3){
+    font-size: 2rem;
+  }
+  .flex_box .text_pofle p:nth-child(4){
+    font-size: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  .flex_box .text_pofle p:nth-child(1), .text_pofle p:nth-child(2){
+    font-size: 4rem;
+  }
+  .flex_box .text_pofle p:nth-child(3){
+    font-size: 1.5rem;
+  }
+  .flex_box .text_pofle p:nth-child(4){
+    font-size: .9rem;
+  }
+}
+
+.col-lg-8{
+  background-color: #f8f9fa;
+}
