@@ -1055,12 +1055,18 @@ body:after {
 
 /* 수정 내용 */
 
-.p-13{
-  padding: 3rem;
-}
-
 .text-top{
   margin-top: 3rem;
+}
+
+.app_cover_2{
+  display: none;
+}
+.app_cover_3{
+  display: none;
+}
+.p-13{
+  padding: 3rem;
 }
 
 .app-section{
@@ -1180,8 +1186,21 @@ body:after {
   .flex_box .text_pofle p:nth-child(5){
     font-size: .9rem;
   }
+  .app_cover{
+    display: none;
+  }
+  .app_cover_2{
+    display: block;
+  }
+  .p-13{
+    padding: 2rem;
+  }
 }
 @media (max-width: 460px) {
+  .flex_box{
+    height: 90vh;
+    margin-top: 10vh;
+  }
   .flex_box .text_pofle p:nth-child(1){
     font-size: 3.5rem;
   }
@@ -1190,6 +1209,15 @@ body:after {
   }
   .flex_box .text_pofle p:nth-child(3){
     display: block;
+  }
+  .app_cover_2{
+    display: none;
+  }
+  .app_cover_3{
+    display: block;
+  }
+  .p-13{
+    padding: 2rem;
   }
 }
 
