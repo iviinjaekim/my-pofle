@@ -1055,10 +1055,6 @@ body:after {
 
 /* 수정 내용 */
 
-.text-top{
-  margin-top: 3rem;
-}
-
 .app_cover_2{
   display: none;
 }
@@ -1080,33 +1076,12 @@ body:after {
   padding: 0 0 10px 0;
 }
 
-.card_box{
-  width: 500px;
-  margin: 0 auto;
-  margin-bottom: 100px;
-}
-.news_box{
-  width: 500px;
-  height: 420px;
+.slide-one-item_2 .slide_2 blockquote {
+  position: relative;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  overflow-x: scroll;
-}
-.news_box img{
-  display: block;
-}
-
-@media (max-width: 550px){
-  .card_box{
-    width: 300px;
-    height: 320px;
-  }
-  .news_box{
-    width: 300px;
-    height: 320px;
-  }
-  .news_box img{
-    width: 1505px;
-  }
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+KR&family=Roboto:wght@300&display=swap');
